@@ -1,0 +1,40 @@
+[package]
+name = "reda-erplacer"
+version = "0.1.0"
+edition = "2021"
+authors = ["Gianmaria Rovelli <rovelli.gianmaria@gmail.com>"]
+license = "MIT"
+
+[profile.release]
+opt-level = 3
+lto = true
+
+[dependencies]
+reda-lefdef = { git = "https://github.com/giammirove/reda-lefdef.git" }
+reda-db = { git = "https://github.com/giammirove/reda-db.git" }
+
+# CLI
+clap = { version = "4.5", features = ["derive"] }
+
+# Logging
+log = "0.4"
+env_logger = "0.11"
+
+# Utilities
+itertools = "0.13"
+eyre = "0.6.12"
+rayon = "1.11.0"
+rustfft = "6.4.1"
+ndarray = "0.17.2"
+num-traits = "0.2.19"
+transpose = "0.2.3"
+rayon-core = "1.13.0"
+image = "0.25.9"
+imageproc = "0.26.0"
+atomic_float = "1.1.0"
+realfft = "3.5.0"
+crossbeam = "0.8.4"
+parking_lot = "0.12.5"
+
+[build-dependencies]
+cc = "1.2.55"
