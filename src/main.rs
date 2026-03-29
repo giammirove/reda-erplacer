@@ -26,9 +26,8 @@ mod scheduler;
 mod utils;
 
 #[derive(Parser, Debug)]
-#[command(name = "dreamplace-lefdef")]
+#[command(name = "reda-erplacer")]
 #[command(version = "0.1.0")]
-#[command(about = "VLSI Global Placement using electron-placer with LEF/DEF input", long_about = None)]
 struct Args {
     /// Input DEF file
     #[arg(short = 'd', long = "def", value_name = "FILE")]
